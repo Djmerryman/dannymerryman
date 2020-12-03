@@ -10,43 +10,18 @@
 	<body>
 		<section id="abstract">
 			<h2>Abstract</h2>
-<p>This document outlines various accessibility related user needs, requirements and scenarios for Real&#45;time communication (RTC). These user needs should drive accessibility requirements in various related specifications and the overall architecture that enables it. It first introduces a definition of RTC as used throughout the document and outlines how RTC accessibility can support the needs of people with disabilities. It defines the term user needs as used throughout the document and then goes on to list a range of these user needs and their related requirements. Following that some quality related scenarios are outlined and finally a data table that maps the user needs contained in this document to related use case requirements found in other technical specifications.</p>
+<p>This document outlines various accessibility related user needs, requirements and scenarios for Real&#45;time communication (RTC). These user needs should drive accessibility requirements in various related specifications and the overall architecture that enables it. It first introduces a definition of RTC as used throughout the document and outlines how RTC accessibility can support the needs of people with disabilities. It defines the term 'user needs' in the context of this document and then goes on to list a range of these user needs and related requirements. Following that some quality related scenarios are outlined and finally a data table that maps the user needs contained in this document to related use case requirements found in other technical specifications.</p>
 
 <p>This document is most explicitly not a collection of baseline requirements. It is also important to note that some of the requirements may be implemented at a system or platform level, and some may be authoring requirements.</p>
 </section>
 
-<section id="sotd" class="introductory">
 
-			<p>This is a <a href="https://www.w3.org/2019/Process-20190301/#WGNote">Working Group Note</a> of RTC Accessibility User Requirements by the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures (APA) Working Group</a> with support from the <a href="https://www.w3.org/WAI/APA/task-forces/research-questions/">Research Questions Task Force</a>. This version includes updates based on public feedback to the <a href="#change-log">First Public Working Draft 19 March 2020</a>.</p>
-			<p>To comment, <a href="https://github.com/w3c/apa/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> apa GitHub repository</a>. If this is not feasible, send email to <a href="mailto:public-apa@w3.org?subject=Comment%20on%20RTC%20Accessibility%20User%20Requirements">public-apa@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-apa/">comment archive</a>). In-progress updates to the document may be viewed in the <a href="https://w3c.github.io/apa/raur/">publicly visible editors' draft</a>.</p>
-		<p>
-      This document was published by the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> as a
-      Working Group Note.
-      
-    </p><p>
-      
-      Comments regarding this document are welcome.
-            Please send them to
-            <a href="mailto:public-apa@w3.org">public-apa@w3.org</a>
-            (<a href="https://lists.w3.org/Archives/Public/public-apa/">archives</a>).
-          
-    </p><p>
-      Publication as a Working Group Note does not imply endorsement by the
-      <abbr title="World Wide Web Consortium">W3C</abbr> Membership. This is a draft document and may be updated, replaced or
-      obsoleted by other documents at any time. It is inappropriate to cite this
-      document as other than work in progress.
-    </p><p data-deliverer="83907">
-      
-        This document was produced by a group
-        operating under the
-        <a href="https://www.w3.org/Consortium/Patent-Policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
-      
-      
-    </p><p>
-                  This document is governed by the
-                  <a id="w3c_process_revision" href="https://www.w3.org/2019/Process-20190301/">1 March 2019 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                </p></section>
-		<section>
+	<section id="sotd" class="introductory">
+		<p>This is an updated draft of <abbr title="Real-time communication">RTC</abbr> Accessibility User Requirements by the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a>. It is developed by the <a href="https://www.w3.org/WAI/APA/task-forces/research-questions/">Research Questions Task Force (<abbr title="Research Questions Task Force">RQTF</abbr>)</a> who work to identify accessibility knowledge gaps and barriers in emerging and future web technologies. The requirements outlined here come from research into user needs that then provide the basis for any technical requirements. This version includes <a href="#change-log">updates based on public feedback</a> to the First Public Working Draft published 19 March 2020.</p>
+
+
+		<p>To comment, <a href="https://github.com/w3c/apa/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> <abbr title="Accessible Platforms Architecure Working Group">APA</abbr> GitHub repository</a> adding the RAUR label. If this is not feasible, send email to <a href="mailto:public-apa@w3.org">public-apa@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-apa/">archives</a>). Comments are requested by <strong>31 Jan 2020</strong>. In-progress updates to the document may be viewed in the <a href="https://w3c.github.io/apa/raur/">publicly visible editors' draft</a>.</p>
+		</section>
 			<h2>Introduction</h2>
 
 			                
@@ -60,15 +35,15 @@
 <h3>Real&#45;time communication and accessibility </h3>
 <p><abbr title="Real&#45;time communication">RTC</abbr> has the potential to allow improved accessibility features that will support a broad range of user needs for people with a wide range of disabilities. These needs can be met through improved audio and video quality, audio routing, captioning, improved live transcription, transfer of alternate formats such as sign-language, text-messaging / chat, real time user support and status polling.</p>
 
-<p>Accessible <abbr title="Real&#45;time communication">RTC</abbr> is enabled by a combination of technologies and specifications such as those from the Media Working Group, Web and Networks IG, Second Screen, and Web Audio Working group as well as <abbr title="Accessibility Guidelines Working Group">AGWG</abbr> and <abbr title="Accessible Rich Internet Applications">ARIA</abbr>. <abbr title="Accessible Platforms Architecure Working Group">APA</abbr> hopes this document will inform how these groups meet various responsibilities for enabling accessible <abbr title="Real&#45;time communication">RTC</abbr>, as well updating related use cases in various groups. For examples, view the current work on <abbr title="Web Real&#45;time communication">WebRTC</abbr> Next Version Use Cases First Public Working Draft. [[webrtc-use-cases]]</p>
+<p><abbr title="Real&#45;time communication">RTC</abbr> accessibility is enabled by a combination of technologies and specifications such as those from the Media Working Group, Web and Networks IG, Second Screen, and Web Audio Working group as well as <abbr title="Accessibility Guidelines Working Group">AGWG</abbr> and <abbr title="Accessible Rich Internet Applications">ARIA</abbr>. <abbr title="Accessible Platforms Architecure Working Group">APA</abbr> hopes this document will inform how these groups meet various responsibilities for enabling accessible <abbr title="Real&#45;time communication">RTC</abbr>, as well updating related use cases in various groups. For examples, view the current work on <abbr title="Web Real&#45;time communication">WebRTC</abbr> Next Version Use Cases First Public Working Draft. [[webrtc-use-cases]]</p>
 		</section>
 
 
 		<section>
 <h3>User needs definition</h3>
-<p>This document outlines various accessibility related user needs for Accessible <abbr title="Real&#45;time communication">RTC</abbr>. These user needs should drive accessibility requirements for Accessible <abbr title="Real&#45;time communication">RTC</abbr> and its related architecture.</p>
+<p>This document outlines various accessibility related user needs for <abbr title="Real&#45;time communication">RTC</abbr> accessibility. The term 'user needs' in this document relates to what people with various disabilities need to successfully use RTC applications. These needs may relate to having particular supports in an application, being able to complete tasks or access other functions. These user needs should drive accessibility requirements for <abbr title="Real&#45;time communication">RTC</abbr> accessibility and its related architecture.</p>
 
-<p>User needs are presented here with their related requirements; some in a range of scenarios (which can be thought of as similar to user stories). User needs and requirements are being actively reviewing by <abbr title="Research Questions Task Force">RQTF</abbr>/<abbr title="Accessible Platforms Architecure Working Group">APA</abbr>.</p>
+<p>User needs are presented here with their related requirements; some in a range of scenarios (which can be thought of as similar to user stories).</p>
 		</section>
 
 </section>
